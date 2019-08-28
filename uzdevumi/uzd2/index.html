@@ -5,9 +5,7 @@
     <meta charset="utf8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
-    <script type="text/javascript" >
-      var masivs = [];
-    </script>
+    <script type="text/javascript" src="../uzd2/Scripts/script.js" ></script>
   </head>
   <body class="container">
     <div id="task">
@@ -20,6 +18,12 @@
         <li>Izveidot funkciju, kura izņems elementu no masīva pēc norādītā indeksa</li>
       </ol>
     </div>
+    <p>Pievienot ievadlodziņā esošo elementu masīva beigās</p>
+    <p><input type="button" onclick="addElement()" value="Pievienot!" id="pievienot"> <input type="text" size="10" id="masElements" ></p>
+    <p>Nodzēst masīva elementu, ja ir ievadīts tā kārtas numurs, ja nav ievadīts elementa kārtas numurs, tad dzēš pēdējo masīva elementu</p>
+    <p><input type="button" onclick="deleteElement()" value="Nodzēst!" id="dzest" > <input type="text" size="10" id="masElemIndx"></p> 
+    <p>Apskatīties masīva saturu: <input type="button" value="Aiziet!" onclick="printOutArrCntnt()"></p>
+    <div id="arrCntntOutput"></div>
     <div id="root">
     </div>
     <div id="info">
