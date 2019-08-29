@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="lv">
+  <meta charset="utf-8">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf8">
@@ -21,9 +22,11 @@
     <p>Pievienot ievadlodziņā esošo elementu masīva beigās</p>
     <p><input type="button" onclick="addElement()" value="Pievienot!" id="pievienot"> <input type="text" size="10" id="masElements" ></p>
     <p>Nodzēst masīva elementu, ja ir ievadīts tā kārtas numurs, ja nav ievadīts elementa kārtas numurs, tad dzēš pēdējo masīva elementu</p>
-    <p><input type="button" onclick="deleteElement()" value="Nodzēst!" id="dzest" > <input type="text" size="10" id="masElemIndx"></p> 
-    <p>Apskatīties masīva saturu: <input type="button" value="Aiziet!" onclick="printOutArrCntnt()"></p>
-    <div id="arrCntntOutput"></div>
+    <p><input type="button" onclick="deleteElement()" value="Nodzēst!" id="dzest" > <input type="text" size="3" id="masElemIndx"></p> 
+    <p>Pievienot jaunu elementu masīvā pēc ievadlodziņā norādītā indeksa</p>
+    <p><input type="button" onclick="addDesiredElement()" value="Pievienot!" id="pievienot"> <input type="text" size="3" id="indekss" ><input type="text" size="10" id="masivaElements" ></p>
+    <h1>Masīva saturs</h1>
+    <div class="text-center" id="arrCntntOutput"></div>
     <div id="root">
     </div>
     <div id="info">

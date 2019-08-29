@@ -4,6 +4,7 @@ function addElement(){
     let vertiba = document.getElementById("masElements").value;
     vertiba == "" ? window.alert("Lūdzu, aizpildi ievadlauciņu!") : masivs.push(vertiba);
     document.getElementById("masElements").value="";
+    printOutArrCntnt()
 }
 function deleteElement(){
     //let indekss = parseInt(document.getElementById("masElemIndx").value);
@@ -13,6 +14,15 @@ function deleteElement(){
     (masivs.length == 0 ? //Aplūkojam vai masīvs nav galīgi tukšs
          window.alert("Tukšs masīvs, lūdzu, ielādē kādu elementu!") : "") : masivs.splice(indekss-1, 1);
     document.getElementById("masElemIndx").value=""; //Attīru ievadlauciņu
+    printOutArrCntnt()
+}
+function addDesiredElement(){
+     //let vertiba = parseInt(document.getElementById("masElements").value);
+     let vertiba = document.getElementById("masivaElements").value;
+     vertiba == "" ? window.alert("Lūdzu, aizpildi ievadlauciņu!") : masivs.push(vertiba);
+     document.getElementById("masivaElements").value="";
+     printOutArrCntnt()
+ }
 }
 function printOutArrCntnt(){
     let izvads = "";
