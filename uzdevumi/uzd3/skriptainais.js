@@ -14,15 +14,7 @@ function deleteElement(){
     masivs.pop();
     printOutArrCntnt();
 }
-function addDesiredElement(){
-     //let vertiba = parseInt(document.getElementById("masElements").value);
-     let vertiba = document.getElementById("masivaElements").value;
-     let vieta = document.getElementById("indekss").value;
-     vertiba == "" ? window.alert("Lūdzu, aizpildi ievadlauciņu!") : masivs.splice(vieta,0,vertiba);
-     document.getElementById("masivaElements").value="";
-     document.getElementById("indekss").value="";
-     printOutArrCntnt();
- }
+
 function printOutArrCntnt(){
     let izvads = "";
     for(let i = 0; i < masivs.length; i++){
