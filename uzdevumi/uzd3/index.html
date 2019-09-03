@@ -4,10 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../styles.css">
-    <script type="text/javascript" >
-      var objekts = {};
-    </script>
+    <!-- <link rel="stylesheet" type="text/css" href="../../styles.css"> -->
+    <script type="text/javascript" src="skriptainais.js" > </script>
   </head>
   <body class="container">
     <div id="task">
@@ -17,6 +15,12 @@
         <li>Izveidot funkciju, kura dzēsīs atslēgu (un tās vērtību) no objekta</li>
         <li>Izveidot funkciju, kura izdrukās visas objekta atslēgas un to vērtības</li>
       </ol>
+      <p>Pievienot ievadlodziņā esošo elementu masīva beigās</p>
+    <p><input type="button" onclick="addElement()" value="Pievienot!" id="pievienot"> <input type="text" size="10" id="atslega" placeholder="atslega" > <input type="text" size="10" id="vertiba" placeholder="vertiba"></p>
+    <p>Nodzēst masīva elementu, ja ir ievadīts tā kārtas numurs, ja nav ievadīts elementa kārtas numurs, tad dzēš pēdējo masīva elementu</p>
+    <p><input type="button" onclick="deleteElement()" value="Nodzēst!" id="dzest" > </p> 
+    <h1>Masīva saturs</h1>
+    <div class="text-center" id="arrCntntOutput"></div>
     </div>
     <div id="root">
     </div>
