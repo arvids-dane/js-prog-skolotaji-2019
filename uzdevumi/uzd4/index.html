@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
     <script type="text/javascript" >
+    function pievienotFormu(){
+      let forma = document.createElement("form"); //izveido elementu <form> </form>
+      document.getElementById("root").appendChild(forma); //ievieto izveidoto formu div konteinerī
+    }
+    function pievienotFormaiInputAndButton(){
+      let counter=0;
+      let ievadlauks=document.createElement("input");
+      ievadlauks.setAttribute('id','numur'+counter);
+      counter++;
+      document.form.appendChild(ievadlauks);
+        }
     </script>
   </head>
   <body class="container">
@@ -19,7 +30,10 @@
         <li>Izveidot funkciju kura parādītu visu ievad lauku saturu kā javascript objektu, pirmais lauks - atslēga, otrais lauks - vērtība</li>
       </ol>
     </div>
+    <button type="button" onclick="pievienotFormu()" class="btn btn-primary btn-lg">Pievienot formu!</button>
+    <button type="button" onclick="pievienotFormaiInputAndButton()" class="btn btn-primary btn-lg">Pievienot formai!</button>
     <div id="root">
+      
     </div>
     <div id="info">
       <h3>Noderīgas saites</h3>
